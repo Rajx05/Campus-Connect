@@ -1,0 +1,48 @@
+---------------------- App structure & Flow --------------------------
+
+                         Campus Connect
+                               │
+                         ┌─────▼─────┐
+                         │ Auth Gate │
+                         └─────┬─────┘
+                               │
+                    ┌──────────┼──────────┐
+                    ▼          ▼          ▼
+                Student      Faculty     Admin
+                  App          App        App
+
+
+
+
+
+--------------------Student-------------------------
+
+
+    │              Home                   │
+    ┌─────────────────────────────────────┐
+    │                                     │
+    │      Student dashboard              │
+    │                                     │
+    └─────────────────────────────────────┘
+
+       🏠       📚       📢       📅       👤
+      Home     Notes   Notices  Timetable Profile
+
+------------------------------------------------------
+
+
+
+
+
+----------------APP STYLING & COLORS-----------------------
+
+Primary: deep academic blue
+Background: light neutral
+Surface: white
+Text: dark neutral
+Muted: gray
+Success: green
+Warning: amber
+Error: red
+
+-------------------------------------------------
