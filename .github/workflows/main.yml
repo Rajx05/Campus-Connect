@@ -38,4 +38,4 @@ jobs:
           packager: npm
 
       - name: Lint Expo app
-        run: npm run lint
+        run: npx expo lint
