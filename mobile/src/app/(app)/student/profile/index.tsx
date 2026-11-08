@@ -8,6 +8,7 @@ import {
   LogOut,
 } from "lucide-react-native";
 import { mockStudent } from "@/data/mockStudentData";
+import { supabase } from "../../../../../lib/supabase";
 
 const academicFields: { label: string; value: string }[] = [
   { label: "Student ID", value: mockStudent.studentId },
@@ -122,7 +123,7 @@ export default function ProfileScreen() {
         <Pressable
           className="flex-row items-center justify-center rounded-2xl border border-red-200 bg-red-50 p-4"
           onPress={() => {
-            // TODO: Implement actual logout when auth is available
+            supabase.auth.signOut();
           }}
         >
           <LogOut size={20} className="text-red-600" />
