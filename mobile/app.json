@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Campus Connect",
-    "slug": "campusconnect",
+    "slug": "campus-connect",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -50,7 +50,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "dd97e137-aad0-4154-8651-02402fbe32db"
+        "projectId": "6dcf0409-9017-44ee-a01f-f512512e6d47"
       }
     },
     "owner": "notraj"
