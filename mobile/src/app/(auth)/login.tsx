@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Alert, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { useRouter } from "expo-router";
 import { supabase } from "../../../lib/supabase";
 import { appStyles } from "../../../styles/styles";
 
@@ -8,6 +9,7 @@ export default function Auth() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const styles = appStyles;
+  const router = useRouter();
 
   async function signInWithEmail() {
     setLoading(true);
@@ -16,7 +18,13 @@ export default function Auth() {
       password: password,
     });
 
-    if (error) Alert.alert(error.message);
+    if (error) {
+      Alert.alert(error.message);
+    } else {
+      // Navigate to the gate; it sees the new session and redirects to
+      // /(app)/student.
+      router.replace("/");
+    }
     setLoading(false);
   }
 
